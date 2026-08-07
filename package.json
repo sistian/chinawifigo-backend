@@ -1,0 +1,17 @@
+{
+  "name": "cwg-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ChinaWiFiGo backend — contact forms, quotes, and booking notifications for Vercel (PayPal/Alipay QR payments, no Stripe)",
+  "scripts": {
+    "test": "node test/test.js",
+    "check": "node --check api/contact.js && node --check api/quote.js && node --check api/booking.js && node --check api/orders.js && node --check lib/security.js && node --check lib/email.js && node --check lib/orders.js",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {
+    "vercel": "^58.4.0"
+  }
+}
